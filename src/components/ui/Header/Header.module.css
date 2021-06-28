@@ -1,0 +1,39 @@
+.root {
+}
+.headerWrapper {
+	@apply flex flex-nowrap justify-between py-3;
+}
+
+/* Logo */
+.logo {
+	@apply w-12 mr-[72px];
+}
+
+/* navbar */
+.navbar {
+	@apply flex items-center justify-center;
+	& li {
+		@apply mx-2;
+	}
+}
+
+.link {
+	@apply px-4 py-2 font-semibold block;
+	&.active {
+		@apply bg-salomonFuschia-600 text-white rounded-full;
+	}
+}
+
+/* Toolbar */
+.toolbar {
+	@apply flex items-center justify-center;
+	& li {
+		@apply mx-2;
+	}
+}
+.socialLink {
+	@apply block;
+	& svg {
+		@apply h-6 w-auto !important;
+	}
+}

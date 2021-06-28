@@ -3,8 +3,8 @@ import React from 'react'
 const Logo = () => {
 	return (
 		<svg
-			width="400"
-			height="400"
+			width="100%"
+			height="auto"
 			viewBox="0 0 400 400"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg">
@@ -24,8 +24,8 @@ const Logo = () => {
 					r="1"
 					gradientUnits="userSpaceOnUse"
 					gradientTransform="translate(19.5 442) rotate(-43.5232) scale(260.655 325.819)">
-					<stop stop-color="#4706D8" />
-					<stop offset="1" stop-color="#DD02FA" />
+					<stop stopColor="#4706D8" />
+					<stop offset="1" stopColor="#DD02FA" />
 				</radialGradient>
 				<radialGradient
 					id="paint1_radial"
@@ -34,8 +34,8 @@ const Logo = () => {
 					r="1"
 					gradientUnits="userSpaceOnUse"
 					gradientTransform="translate(428.5 23) rotate(154.214) scale(263.21 329.012)">
-					<stop stop-color="#4706D8" />
-					<stop offset="1" stop-color="#DD02FA" />
+					<stop stopColor="#4706D8" />
+					<stop offset="1" stopColor="#DD02FA" />
 				</radialGradient>
 			</defs>
 		</svg>

@@ -8,10 +8,12 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				salomonFuschia: '#fa00ff',
+				salomonFuschia: {
+					500: '#fa00ff',
+					600: '#cc00ff',
+				},
 				salomonCyan: '#00bae2',
 				salomonGray: '#636363',
-				salomonPurple: '#cc00ff',
 			},
 		},
 	},
