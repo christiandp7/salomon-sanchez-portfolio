@@ -2,11 +2,15 @@ import React from 'react'
 import Image from 'next/image'
 import cx from 'classnames'
 import Circle from '@components/icons/Circle'
+import { Swiper, SwiperSlide } from 'swiper/react'
 // assets
 import s from './Hero.module.css'
 // import salomonImg from '@images/salomon-photo.png'
 import salomonImg from '@images/salomon_picture.png'
 import lastVideoImg from '@images/last_video.jpg'
+import lolImg from '@images/league_of_legends_app.jpg'
+import foodDeliveryImg from '@images/ui_food_delivery_app.jpg'
+import playStationImg from '@images/ui_playstation_app.jpg'
 import Container from '@components/ui/Container'
 import Figma from '@components/icons/Figma'
 import Illustrator from '@components/icons/Illustrator'
@@ -14,6 +18,11 @@ import Photoshop from '@components/icons/Photoshop'
 import Reactjs from '@components/icons/Reactjs'
 import Css3 from '@components/icons/Css3'
 import { YoutubeLogo } from '@components/icons/Youtube'
+
+import SwiperCore, { Autoplay } from 'swiper/core'
+
+// install Swiper modules
+SwiperCore.use([Autoplay])
 
 const Hero = () => {
 	return (
@@ -32,7 +41,7 @@ const Hero = () => {
 				</div>
 			</div>
 
-			<Container>
+			<Container className="2xl:flex 2xl:flex-col 2xl:justify-evenly 2xl:h-full">
 				<div className={s.heroHeading}>
 					<div className={s.heroHeadingCard}>
 						<h3>Hola mi nombre es</h3>
@@ -43,7 +52,7 @@ const Hero = () => {
 
 				<div className={s.heroContent}>
 					<div className={s.heroContentWrapper}>
-						<div className="flex-between-center">
+						<div className="flex-between-end 2xl:items-center">
 							<div className={s.skills}>
 								<h4>Skills</h4>
 								<ul className={s.skillsIcons}>
@@ -79,7 +88,58 @@ const Hero = () => {
 							</div>
 						</div>
 						<div className={s.portfolio}>
-							<h4>Recent Projects</h4>
+							<h4 className="mb-1">Recent Projects</h4>
+							<Swiper
+								spaceBetween={50}
+								slidesPerView={3}
+								pauseOnMouseEnter
+								loop
+								autoplay={{ delay: 2500 }}
+								onSlideChange={() => console.log('slide change')}
+								onSwiper={swiper => console.log(swiper)}>
+								<SwiperSlide>
+									<img
+										src="/images/league_of_legends_app.jpg"
+										alt="League of Legends"
+										className={s.portfolioImg}
+									/>
+								</SwiperSlide>
+								<SwiperSlide>
+									<img
+										src="/images/ui_food_delivery_app.jpg"
+										alt="UI Food Delivery App"
+										className={s.portfolioImg}
+									/>
+								</SwiperSlide>
+								<SwiperSlide>
+									<img
+										src="/images/ui_playstation_app.jpg"
+										alt="UI PlayStation App"
+										className={s.portfolioImg}
+									/>
+								</SwiperSlide>
+								<SwiperSlide>
+									<img
+										src="/images/league_of_legends_app.jpg"
+										alt="League of Legends"
+										className={s.portfolioImg}
+									/>
+								</SwiperSlide>
+								<SwiperSlide>
+									<img
+										src="/images/ui_food_delivery_app.jpg"
+										alt="UI Food Delivery App"
+										className={s.portfolioImg}
+									/>
+								</SwiperSlide>
+								<SwiperSlide>
+									<img
+										src="/images/ui_playstation_app.jpg"
+										alt="UI PlayStation App"
+										className={s.portfolioImg}
+									/>
+								</SwiperSlide>
+							</Swiper>
 						</div>
 					</div>
 				</div>
