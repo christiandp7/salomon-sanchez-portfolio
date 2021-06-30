@@ -20,4 +20,14 @@
 	.flex-end-center {
 		@apply flex justify-end items-center;
 	}
+	/* between */
+	.flex-between-start {
+		@apply flex justify-between items-start;
+	}
+	.flex-between-center {
+		@apply flex justify-between items-center;
+	}
+	.flex-between-end {
+		@apply flex justify-between items-end;
+	}
 }

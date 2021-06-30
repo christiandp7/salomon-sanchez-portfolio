@@ -27,10 +27,10 @@
 
 /* Heading */
 .heroHeading {
-	@apply flex justify-center items-end h-[38vh];
+	@apply flex justify-center items-end h-[32vh];
 }
 .heroHeadingCard {
-	@apply px-10 py-6 font-black rounded-2xl border border-white border-solid;
+	@apply px-10 py-6 font-black rounded-2xl -mb-10 border border-white border-solid;
 	background: rgba(255, 255, 255, 0.4);
 	/* box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.1); */
 	-webkit-backdrop-filter: blur(4px);
@@ -50,6 +50,9 @@
 /* Content */
 .heroContent {
 	@apply flex flex-nowrap w-full;
+	& h4 {
+		@apply text-xl;
+	}
 }
 .heroContentWrapper {
 	@apply w-[60%] ml-auto;
@@ -57,13 +60,18 @@
 
 /* Skills */
 .skills {
-	& h4 {
-		@apply text-xl;
-	}
+	/* @apply */
 }
 .skillsIcons {
 	@apply flex my-2 ml-[-5px] items-center;
 	& li {
 		@apply mr-4;
 	}
+}
+
+/* Last Video */
+.lastVideo {
+}
+.lastVideoImg {
+	@apply rounded-3xl w-[220px];
 }

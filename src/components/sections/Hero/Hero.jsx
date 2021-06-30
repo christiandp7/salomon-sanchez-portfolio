@@ -6,12 +6,14 @@ import Circle from '@components/icons/Circle'
 import s from './Hero.module.css'
 // import salomonImg from '@images/salomon-photo.png'
 import salomonImg from '@images/salomon_picture.png'
+import lastVideoImg from '@images/last_video.jpg'
 import Container from '@components/ui/Container'
 import Figma from '@components/icons/Figma'
 import Illustrator from '@components/icons/Illustrator'
 import Photoshop from '@components/icons/Photoshop'
 import Reactjs from '@components/icons/Reactjs'
 import Css3 from '@components/icons/Css3'
+import { YoutubeLogo } from '@components/icons/Youtube'
 
 const Hero = () => {
 	return (
@@ -41,7 +43,7 @@ const Hero = () => {
 
 				<div className={s.heroContent}>
 					<div className={s.heroContentWrapper}>
-						<div className="flex justify-between items-baseline">
+						<div className="flex-between-center">
 							<div className={s.skills}>
 								<h4>Skills</h4>
 								<ul className={s.skillsIcons}>
@@ -62,9 +64,23 @@ const Hero = () => {
 									</li>
 								</ul>
 							</div>
-							<div className={s.lastVideo}>Last video</div>
+							<div className={s.lastVideo}>
+								<div className="flex-between-center mb-1">
+									<h4>Last Video</h4>
+									<YoutubeLogo className="h-5 w-auto ml-4" />
+								</div>
+								<Image
+									src={lastVideoImg}
+									className={s.lastVideoImg}
+									alt="last video"
+									placeholder="blur"
+									layout="responsive"
+								/>
+							</div>
 						</div>
-						<div className={s.portfolio}>Recent Projects</div>
+						<div className={s.portfolio}>
+							<h4>Recent Projects</h4>
+						</div>
 					</div>
 				</div>
 			</Container>
