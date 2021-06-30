@@ -1,6 +1,6 @@
 .root {
 	height: calc(100vh - 75px);
-	@apply flex relative;
+	@apply flex flex-col relative;
 }
 
 /* Figure */
@@ -26,7 +26,31 @@
 }
 
 /* Heading */
-.glassCard {
-}
 .heroHeading {
+	@apply flex justify-center items-end h-[38vh];
+}
+.heroHeadingCard {
+	@apply px-10 py-6 font-black rounded-2xl border border-white border-solid;
+	background: rgba(255, 255, 255, 0.4);
+	/* box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.1); */
+	-webkit-backdrop-filter: blur(4px);
+	backdrop-filter: blur(4px);
+
+	& h3 {
+		@apply text-3xl uppercase;
+	}
+	& h1 {
+		@apply text-5xl uppercase text-salomonCyan;
+	}
+	& h5 {
+		@apply text-base;
+	}
+}
+
+/* Content */
+.heroContent {
+	@apply flex flex-nowrap w-full;
+}
+.heroContentWrapper {
+	@apply w-[60%] ml-auto bg-yellow-500;
 }

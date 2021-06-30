@@ -25,9 +25,15 @@ const Hero = () => {
 			</div>
 
 			<div className={s.heroHeading}>
-				<h3>Hola mi nombre es</h3>
-				<h1>Salomon Sanchez</h1>
-				<h5>Fullstack Designer & Frontend Developer</h5>
+				<div className={s.heroHeadingCard}>
+					<h3>Hola mi nombre es</h3>
+					<h1>Salomon Sanchez</h1>
+					<h5>Fullstack Designer & Frontend Developer</h5>
+				</div>
+			</div>
+
+			<div className={s.heroContent}>
+				<div className={s.heroContentWrapper}>skills / latest video</div>
 			</div>
 		</div>
 	)

@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	body {
+		@apply font-gilroy text-salomonGray;
+		background-color: #f6f6f6;
+	}
+}
+
 @layer components {
 	.flex-center {
 		@apply flex justify-center items-center;

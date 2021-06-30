@@ -7,6 +7,9 @@ module.exports = {
 	darkMode: false, // or 'media' or 'class'
 	theme: {
 		extend: {
+			fontFamily: {
+				gilroy: ['"Gilroy"', 'sans-serif'],
+			},
 			colors: {
 				salomonFuschia: {
 					500: '#fa00ff',

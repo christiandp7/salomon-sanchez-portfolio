@@ -18,8 +18,8 @@ const Circle = ({ ...props }) => (
 		<defs>
 			<linearGradient
 				id="paint0_linear"
-				x1="117"
-				y1="572"
+				x1="188"
+				y1="527.5"
 				x2="648.5"
 				y2="100.5"
 				gradientUnits="userSpaceOnUse">
