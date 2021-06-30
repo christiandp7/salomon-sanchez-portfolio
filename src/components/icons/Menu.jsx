@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Menu = ({ props }) => (
+const Menu = ({ ...props }) => (
 	<svg
 		width="32"
 		height="32"

@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Logo = () => {
+const Logo = ({...props}) => {
 	return (
 		<svg
 			width="100%"
 			height="auto"
 			viewBox="0 0 400 400"
 			fill="none"
-			xmlns="http://www.w3.org/2000/svg">
+			xmlns="http://www.w3.org/2000/svg" {...props}>
 			<path
 				d="M325 277C325 332.228 280.228 377 225 377H100C86.1929 377 75 365.807 75 352L75 179C75 177.895 75.8954 177 77 177L225 177C280.228 177 325 221.772 325 277Z"
 				fill="url(#paint0_radial)"

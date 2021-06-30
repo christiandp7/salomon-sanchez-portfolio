@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const YoutubeIcon = ({ props }) => (
+export const YoutubeIcon = ({ ...props }) => (
 	<svg
 		width="26"
 		height="26"
@@ -26,7 +26,7 @@ export const YoutubeIcon = ({ props }) => (
 	</svg>
 )
 
-export const YoutubeLogo = ({ props }) => (
+export const YoutubeLogo = ({ ...props }) => (
 	<svg
 		width="512"
 		height="116"

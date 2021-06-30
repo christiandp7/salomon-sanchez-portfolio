@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Envelope = ({ props }) => (
+const Envelope = ({ ...props }) => (
 	<svg
 		width="24"
 		height="24"

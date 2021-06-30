@@ -1,6 +1,6 @@
 import React from 'react'
 
-const GitHub = ({ props }) => (
+const GitHub = ({ ...props }) => (
 	<svg
 		width="26"
 		height="26"

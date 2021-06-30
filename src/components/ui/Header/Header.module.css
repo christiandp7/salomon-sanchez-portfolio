@@ -1,7 +1,7 @@
 .root {
 }
 .headerWrapper {
-	@apply flex flex-nowrap justify-between items-center py-3;
+	@apply flex flex-nowrap justify-between items-center py-3 min-h-[75px];
 }
 
 /* Logo */
