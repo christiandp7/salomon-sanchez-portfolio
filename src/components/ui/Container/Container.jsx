@@ -5,7 +5,8 @@ import cx from 'classnames'
 const Container = ({ children, className, el = 'div' }) => {
 	let ComponentEl = el
 	return (
-		<ComponentEl className={cx(className, 'mx-auto max-w-7xl px-6')}>
+		<ComponentEl
+			className={cx(className, 'mx-auto w-full max-w-7xl px-6')}>
 			{children}
 		</ComponentEl>
 	)

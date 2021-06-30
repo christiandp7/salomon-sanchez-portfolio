@@ -18,15 +18,15 @@
 }
 
 .link {
-	@apply px-4 py-2 font-semibold block;
+	@apply px-4 py-2 block;
 	&.active {
 		@apply bg-salomonFuschia-600 text-white rounded-full;
 	}
 }
 
-/* Toolbar */
-.toolbar {
-	@apply flex items-center justify-center;
+/* Socialbar */
+.socialbar {
+	@apply flex items-center;
 	& li {
 		@apply mx-2;
 	}

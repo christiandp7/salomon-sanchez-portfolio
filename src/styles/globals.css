@@ -4,12 +4,13 @@
 
 @layer base {
 	body {
-		@apply font-gilroy text-salomonGray;
+		@apply font-gilroy font-black text-salomonGray;
 		background-color: #f6f6f6;
 	}
 }
 
 @layer components {
+	/* Flex */
 	.flex-center {
 		@apply flex justify-center items-center;
 	}

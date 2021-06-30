@@ -58,8 +58,8 @@ const Header = () => {
 							</li>
 						</ul>
 					</div>
-					<div className=" flex-center w-1/6">
-						<ul className={s.toolbar}>
+					<div className=" flex-end-center w-1/6">
+						<ul className={s.socialbar}>
 							<li>
 								<a href="#" className={cx(s.socialLink, s.youtubeIcon)}>
 									<YoutubeIcon />

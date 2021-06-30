@@ -37,10 +37,10 @@
 	backdrop-filter: blur(4px);
 
 	& h3 {
-		@apply text-3xl uppercase;
+		@apply text-4xl uppercase;
 	}
 	& h1 {
-		@apply text-5xl uppercase text-salomonCyan;
+		@apply text-6xl uppercase text-salomonCyan;
 	}
 	& h5 {
 		@apply text-base;
@@ -52,5 +52,18 @@
 	@apply flex flex-nowrap w-full;
 }
 .heroContentWrapper {
-	@apply w-[60%] ml-auto bg-yellow-500;
+	@apply w-[60%] ml-auto;
+}
+
+/* Skills */
+.skills {
+	& h4 {
+		@apply text-xl;
+	}
+}
+.skillsIcons {
+	@apply flex my-2 ml-[-5px] items-center;
+	& li {
+		@apply mr-4;
+	}
 }
