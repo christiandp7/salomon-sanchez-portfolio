@@ -12,7 +12,7 @@ const Carousel = ({ items }) => {
 			spaceBetween={50}
 			slidesPerView={3}
 			grabCursor
-			pauseOnMouseEnter
+			pauseonmouseenter
 			loop
 			autoplay={{ delay: 2500 }}>
 			{items &&

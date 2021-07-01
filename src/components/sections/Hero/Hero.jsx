@@ -29,6 +29,7 @@ const Hero = () => {
 						className={s.heroImg}
 						alt="Salomon Sanchez Picture"
 						// placeholder="blur"
+						// layer="responsive"
 						width={607}
 						height={819}
 					/>
