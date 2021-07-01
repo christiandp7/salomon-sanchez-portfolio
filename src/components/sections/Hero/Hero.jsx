@@ -89,7 +89,23 @@ const Hero = () => {
 						</div>
 						<div className={s.projects}>
 							<h4 className="mb-1">Recent Projects</h4>
-							<Carousel items={projects} />
+							<Carousel
+								items={projects}
+								breakpoints={{
+									640: {
+										slidesPerView: 2,
+										spaceBetween: 20,
+									},
+									768: {
+										slidesPerView: 3,
+										spaceBetween: 40,
+									},
+									1024: {
+										slidesPerView: 3,
+										spaceBetween: 50,
+									},
+								}}
+							/>
 						</div>
 					</div>
 				</div>

@@ -6,12 +6,12 @@
 
 /* Logo */
 .logo {
-	@apply w-11 md:w-12;
+	@apply w-11 lg:w-12;
 }
 
 /* navbar */
 .navbar {
-	@apply hidden md:flex items-center justify-center;
+	@apply hidden lg:flex items-center justify-center;
 	& li {
 		@apply mx-2;
 	}
@@ -34,14 +34,14 @@
 .socialLink {
 	@apply block;
 	& svg {
-		@apply h-5 md:h-6 w-auto !important;
+		@apply h-5 lg:h-6 w-auto !important;
 	}
 	&.youtubeIcon {
-		@apply hidden md:block;
+		@apply hidden lg:block;
 	}
 }
 
 /* Menu Button */
 .menuButton {
-	/* @apply block md:hidden; */
+	/* @apply block lg:hidden; */
 }

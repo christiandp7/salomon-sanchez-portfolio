@@ -15,13 +15,13 @@ const Header = () => {
 		<nav className={s.root}>
 			<Container>
 				<div className={s.headerWrapper}>
-					<div className="flex-start-center w-1/6 md:hidden">
+					<div className="flex-start-center w-1/6 lg:hidden">
 						<button className={s.menuButton}>
 							<Menu />
 						</button>
 					</div>
 
-					<div className="flex justify-center md:justify-start items-center w-4/6 md:w-1/6">
+					<div className="flex justify-center lg:justify-start items-center w-4/6 md:w-1/6">
 						<div className={s.logo}>
 							<Link href="/">
 								<Logo />
@@ -29,7 +29,7 @@ const Header = () => {
 						</div>
 					</div>
 
-					<div className="flex-center hidden md:block w-4/6">
+					<div className="flex-center hidden lg:block w-4/6">
 						<ul className={s.navbar}>
 							<li>
 								<a href="/" className={cx(s.link, s.active)}>

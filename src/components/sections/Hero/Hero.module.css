@@ -5,7 +5,7 @@
 
 /* Figure */
 .heroFigure {
-	@apply absolute w-full h-full flex items-end overflow-hidden;
+	@apply absolute w-full h-full flex items-end overflow-hidden z-[-1];
 	line-height: 0;
 
 	/* &:before {

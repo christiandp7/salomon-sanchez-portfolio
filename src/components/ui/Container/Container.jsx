@@ -13,7 +13,7 @@ const Container = ({ children, className, el = 'div' }) => {
 }
 
 Container.propTypes = {
-	children: PropTypes.element.isRequired,
+	children: PropTypes.node.isRequired,
 	className: PropTypes.any,
 	el: PropTypes.string,
 }
