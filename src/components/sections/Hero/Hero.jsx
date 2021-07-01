@@ -28,12 +28,17 @@ const Hero = () => {
 						src={salomonImg}
 						className={s.heroImg}
 						alt="Salomon Sanchez Picture"
-						// placeholder="blur"
-						// layer="responsive"
+						placeholder="blur"
+						layer="responsive"
 						width={607}
 						height={819}
 					/>
 				</div>
+				{/* <img
+					src="/images/salomon_picture.png"
+					alt="Salomon Sanchez"
+					className={s.heroImg}
+				/> */}
 			</div>
 
 			<Container className="2xl:flex 2xl:flex-col 2xl:justify-evenly 2xl:h-full">
