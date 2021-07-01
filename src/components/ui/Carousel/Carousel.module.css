@@ -1,0 +1,4 @@
+.image {
+	@apply rounded-3xl shadow-lg;
+	/* box-shadow: 0 14px 30px -13px rgba(0, 0, 0, 0.25); */
+}
