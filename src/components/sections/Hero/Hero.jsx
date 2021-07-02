@@ -1,10 +1,6 @@
 import React, { useEffect } from 'react'
-import Image from 'next/image'
-import cx from 'classnames'
+import Typewriter from 'typewriter-effect'
 import { useMediaQuery } from 'react-responsive'
-// import { useMediaQuery } from 'beautiful-react-hooks'
-
-// assets
 import lastVideoImg from '@images/last_video.jpg'
 import Container from '@components/ui/Container'
 import LastVideo from '@components/ui/LastVideo/'
@@ -15,8 +11,8 @@ import {
 	HeroFigureDesktop,
 	HeroFigureMobile,
 } from '@components/ui/HeroFigure/'
-import s from './Hero.module.css'
 import Footer from '@components/ui/Footer/Footer'
+import s from './Hero.module.css'
 
 const Hero = () => {
 	const isDesktop = useMediaQuery({ minWidth: 1024 })
@@ -30,7 +26,24 @@ const Hero = () => {
 				<div className={s.heading}>
 					<div className={s.card}>
 						<h3>Hola mi nombre es</h3>
-						<h1>Salomon Sanchez</h1>
+						<h1>
+							<Typewriter
+								delay={120}
+								options={{
+									cursor: isDesktop ? '_' : null,
+								}}
+								onInit={typewriter => {
+									typewriter
+										.pauseFor(1000)
+										.typeString('Salomon')
+										.pauseFor(800)
+										.typeString(' ')
+										.pauseFor(700)
+										.typeString('Sanchez')
+										.start()
+								}}
+							/>
+						</h1>
 						<h5>Fullstack Designer & Frontend Developer</h5>
 					</div>
 				</div>
