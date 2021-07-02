@@ -1,0 +1,25 @@
+{
+  "title": "Salomon Sanchez | Fullstack Designer & Frontend Developer",
+  "description": "Fullstack Designer & Frontend Developer",
+  "openGraph": {
+    "title": "Salomon Sanchez | Fullstack Designer & Frontend Developer",
+    "description": "Fullstack Designer & Frontend Developer",
+    "type": "website",
+    "locale": "en",
+    "url": "https://salomon-sanchez-portfolio.vercel.app",
+    "site_name": "Salomon Sanchez Portfolio",
+    "images": [
+      {
+        "url": "/card.jpg",
+        "width": 1200,
+        "height": 720,
+        "alt": "Salomon Sanchez Portfolio"
+      }
+    ]
+  },
+  "twitter": {
+    "handle": "@_salomonsanchez",
+    "site": "@_salomonsanchez",
+    "cardType": "summary_large_image"
+  }
+}

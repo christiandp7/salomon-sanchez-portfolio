@@ -1,14 +1,12 @@
-import Head from 'next/head'
+// import Head from 'next/head'
+import Head from '@components/common/Head'
 import MainLayout from '@layouts/MainLayout'
 import Hero from '@components/sections/Hero'
 
 export default function Home() {
 	return (
 		<>
-			<Head>
-				<title> Next App</title>
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
+			<Head />
 			<MainLayout>
 				<Hero />
 			</MainLayout>

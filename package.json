@@ -8,9 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "beautiful-react-hooks": "^0.35.0",
     "classnames": "^2.3.1",
     "next": "latest",
+    "next-seo": "^4.26.0",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-nesting": "^8.0.1",
     "postcss-preset-env": "^6.7.0",
