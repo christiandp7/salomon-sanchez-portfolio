@@ -93,7 +93,7 @@ const Hero = () => {
 					</div>
 				)}
 
-				<Footer />
+				{!isDesktop && <Footer />}
 			</Container>
 		</div>
 	)

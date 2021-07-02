@@ -17,7 +17,7 @@ const LastVideo = ({ image, layout = 'intrinsic' }) => {
 						className="rounded-3xl w-[220px]"
 						alt="last video"
 						placeholder="blur"
-						layout=""
+						layout={layout}
 						// width={220}
 					/>
 				</a>
