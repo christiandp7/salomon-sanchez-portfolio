@@ -1,0 +1,21 @@
+.figureDesktop {
+	@apply absolute w-full lg:h-full hidden lg:flex items-end overflow-hidden z-[-1];
+	line-height: 0;
+}
+.circleDsk {
+	@apply w-[50%] h-auto absolute lg:top-[15%] xl:top-[12%] left-[-12%];
+}
+.imageWrapperDsk {
+	@apply relative left-[-8%] 2xl:left-[-10%] max-h-full w-[50%] md:w-[30%] lg:w-[32%] xl:w-[30%] 2xl:w-[40%];
+}
+
+.figureMobile {
+	@apply relative overflow-hidden leading-0;
+}
+.circleMbl {
+	@apply absolute w-[150%] h-auto left-[-55%] top-[10%];
+}
+
+.imageWrapperMbl {
+	@apply relative left-[-30%] 2xl:left-[-10%] max-h-full;
+}

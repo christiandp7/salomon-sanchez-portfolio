@@ -1,4 +1,3 @@
 .image {
-	@apply rounded-3xl shadow-lg;
-	/* box-shadow: 0 14px 30px -13px rgba(0, 0, 0, 0.25); */
+	@apply rounded-2xl md:rounded-3xl shadow-lg mb-6 lg:mb-5;
 }

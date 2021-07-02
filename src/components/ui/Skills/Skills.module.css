@@ -1,0 +1,16 @@
+.root {
+	@apply w-auto mb-8 md:mb-20 lg:mb-3 2xl:mb-0;
+	& h4 {
+		@apply text-lg md:text-xl;
+	}
+}
+
+.icons {
+	@apply flex flex-wrap my-2 ml-[-5px] items-center;
+	& li {
+		@apply block mr-4 my-1 lg:my-0;
+		& svg {
+			@apply md:h-10 sm:w-auto lg:h-auto lg:w-auto;
+		}
+	}
+}

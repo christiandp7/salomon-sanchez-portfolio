@@ -7,13 +7,12 @@ import s from './Carousel.module.css'
 // install Swiper modules
 SwiperCore.use([Autoplay])
 
-const Carousel = ({ items, breakpoints = {} }) => {
+const Carousel = ({ items, breakpoints = {}, ...props }) => {
 	return (
 		<Swiper
-			spaceBetween={50}
-			slidesPerView={3}
+			{...props}
 			grabCursor
-			pauseonmouseenter={false}
+			// pauseonmouseenter={false}
 			breakpoints={breakpoints}
 			loop
 			autoplay={{ delay: 2500 }}>
