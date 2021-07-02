@@ -16,6 +16,7 @@ import {
 	HeroFigureMobile,
 } from '@components/ui/HeroFigure/'
 import s from './Hero.module.css'
+import Footer from '@components/ui/Footer/Footer'
 
 const Hero = () => {
 	const isDesktop = useMediaQuery({ minWidth: 1024 })
@@ -45,22 +46,9 @@ const Hero = () => {
 								<h4 className="mb-1">Recent Projects</h4>
 								<Carousel
 									items={projects}
-									spaceBetween={10}
+									spaceBetween={15}
 									slidesPerView={2}
-									breakpoints={{
-										640: {
-											slidesPerView: 2,
-											spaceBetween: 20,
-										},
-										768: {
-											slidesPerView: 3,
-											spaceBetween: 40,
-										},
-										1024: {
-											slidesPerView: 3,
-											spaceBetween: 50,
-										},
-									}}
+									breakpoints={breakpoints}
 								/>
 							</div>
 						</div>
@@ -91,22 +79,9 @@ const Hero = () => {
 							<h4 className="mb-1">Recent Projects</h4>
 							<Carousel
 								items={projects}
-								spaceBetween={10}
+								spaceBetween={15}
 								slidesPerView={2}
-								breakpoints={{
-									640: {
-										slidesPerView: 2,
-										spaceBetween: 20,
-									},
-									768: {
-										slidesPerView: 3,
-										spaceBetween: 40,
-									},
-									1024: {
-										slidesPerView: 3,
-										spaceBetween: 50,
-									},
-								}}
+								breakpoints={breakpoints}
 							/>
 						</div>
 					</div>
@@ -114,12 +89,29 @@ const Hero = () => {
 
 				{!isTabletOrDesktop && (
 					<div className="mb-8">
-						<LastVideo image={lastVideoImg} link="#" />
+						<LastVideo image={lastVideoImg} layout="responsive" />
 					</div>
 				)}
+
+				<Footer />
 			</Container>
 		</div>
 	)
+}
+
+const breakpoints = {
+	640: {
+		slidesPerView: 2,
+		spaceBetween: 20,
+	},
+	768: {
+		slidesPerView: 3,
+		spaceBetween: 40,
+	},
+	1024: {
+		slidesPerView: 3,
+		spaceBetween: 50,
+	},
 }
 
 export default Hero

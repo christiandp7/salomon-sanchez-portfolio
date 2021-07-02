@@ -32,7 +32,7 @@ const Header = () => {
 					<div className="flex-center hidden lg:block w-4/6">
 						<ul className={s.navbar}>
 							<li>
-								<a href="/" className={cx(s.link, s.active)}>
+								<a href="#" className={cx(s.link, s.active)}>
 									Home
 								</a>
 							</li>
@@ -61,19 +61,34 @@ const Header = () => {
 					<div className=" flex-end-center w-1/6">
 						<ul className={s.socialbar}>
 							<li>
-								<a href="#" className={cx(s.socialLink, s.youtubeIcon)}>
-									<YoutubeIcon />
-								</a>
+								<Link href="https://www.youtube.com/c/SalomonSanchez?sub_confirmation=1">
+									<a
+										target="_blank"
+										rel="noreferrer"
+										className={cx(s.socialLink, s.youtubeIcon)}>
+										<YoutubeIcon />
+									</a>
+								</Link>
 							</li>
 							<li>
-								<a href="#" className={s.socialLink}>
-									<Twitter />
-								</a>
+								<Link href="https://twitter.com/_salomonsanchez">
+									<a
+										target="_blank"
+										rel="noreferrer"
+										className={s.socialLink}>
+										<Twitter />
+									</a>
+								</Link>
 							</li>
 							<li>
-								<a href="#" className={s.socialLink}>
-									<GitHub />
-								</a>
+								<Link href="https://github.com/SalomonDev">
+									<a
+										target="_blank"
+										rel="noreferrer"
+										className={s.socialLink}>
+										<GitHub />
+									</a>
+								</Link>
 							</li>
 						</ul>
 					</div>
