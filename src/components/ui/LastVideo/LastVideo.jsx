@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { YoutubeLogo } from '@components/icons/Youtube'
 
-const LastVideo = ({ image, layout = 'fill' }) => {
+const LastVideo = ({ image, layout = 'intrinsic' }) => {
 	return (
 		<div>
 			<div className="flex-start-center lg:flex-between-center mb-1">
@@ -17,7 +17,7 @@ const LastVideo = ({ image, layout = 'fill' }) => {
 						className="rounded-3xl w-[220px]"
 						alt="last video"
 						placeholder="blur"
-						layout={layout}
+						layout=""
 						// width={220}
 					/>
 				</a>
