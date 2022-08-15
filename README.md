@@ -1,6 +1,6 @@
 # Salomon Sanchez Portfolio | Next.js + TailwindCSS
 
-This website was builded by me using [Tailwind CSS](https://tailwindcss.com/) and [Next.js](https://nextjs.org/) with 💙 for all the community.
+This website was built using [Tailwind CSS](https://tailwindcss.com/) and [Next.js](https://nextjs.org/) with 💙 for all the community.
 
 Thanks [@\_salomonsanchez](https://github.com/SalomonDev) for all your hard work and contribution to the dev community.
 
